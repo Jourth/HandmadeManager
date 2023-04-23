@@ -40,7 +40,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
 
     // Kodein
-    def kodein_version = "5.2.0"
+    def kodein_version = "7.19.0"
     implementation "org.kodein.di:kodein-di-generic-jvm:$kodein_version"
     implementation "org.kodein.di:kodein-di-framework-android-x:$kodein_version"
 
