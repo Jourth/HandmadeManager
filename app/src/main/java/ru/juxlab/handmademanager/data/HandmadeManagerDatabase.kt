@@ -7,6 +7,7 @@ import androidx.room.RoomDatabase
 import ru.juxlab.handmademanager.data.model.Folder
 import ru.juxlab.handmademanager.data.model.HandmadeObject
 import ru.juxlab.handmademanager.data.model.HandmadeObjectProperty
+import ru.juxlab.handmademanager.data.model.PropertyMetadata
 import ru.juxlab.handmademanager.data.model.PropertyType
 
 @Database(
@@ -16,7 +17,7 @@ import ru.juxlab.handmademanager.data.model.PropertyType
         HandmadeObject::class,
         HandmadeObjectProperty::class,
         Folder::class,
-        PropertyType::class
+        PropertyMetadata::class
                ]
 
 )
