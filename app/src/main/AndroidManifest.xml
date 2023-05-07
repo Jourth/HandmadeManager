@@ -24,11 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.edit_hmobject.HandmadeObjectActivity"
-            android:exported="true"
-            android:theme="@style/Theme.HandmadeManager.NoActionBar">
-        </activity>
+        <activity android:name=".ui.edit_hmobject.HandmadeObjectActivity"/>
+
 
     </application>
 

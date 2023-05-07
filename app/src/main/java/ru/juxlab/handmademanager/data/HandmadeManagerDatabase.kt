@@ -23,6 +23,8 @@ import ru.juxlab.handmademanager.data.model.PropertyType
 )
 abstract class HandmadeManagerDatabase : RoomDatabase() {
 
+    abstract fun handmadeManagerDao(): HandmadeManagerDao
+
     companion object{
         @Volatile private var instance: HandmadeManagerDatabase? = null
         private val LOCK = Any()

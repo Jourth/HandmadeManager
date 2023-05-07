@@ -13,4 +13,9 @@
     <string name="menu_settings">Настройки приложения</string>
     <string name="menu_about">О приложении</string>
 
+    <!--Handmade object -->
+    <string name="handmade_object_name_hint">Название изделия</string>
+    <string name="handmade_object_description_hint">Описание изделия</string>
+    <string name="handmade_object_save">Сохранить</string>
+
 </resources>
