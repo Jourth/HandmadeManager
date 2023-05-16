@@ -4,8 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import ru.juxlab.handmademanager.data.model.Folder
 import ru.juxlab.handmademanager.data.model.HandmadeObject
+import ru.juxlab.handmademanager.data.model.HandmadeObjectImage
 import ru.juxlab.handmademanager.data.model.HandmadeObjectProperty
 import ru.juxlab.handmademanager.data.model.PropertyMetadata
 import ru.juxlab.handmademanager.data.model.PropertyType
@@ -15,12 +17,14 @@ import ru.juxlab.handmademanager.data.model.PropertyType
 
     entities = [
         HandmadeObject::class,
+        HandmadeObjectImage::class,
         HandmadeObjectProperty::class,
         Folder::class,
         PropertyMetadata::class
                ]
 
 )
+@TypeConverters(Converters::class)
 abstract class HandmadeManagerDatabase : RoomDatabase() {
 
     abstract fun handmadeManagerDao(): HandmadeManagerDao

@@ -11,4 +11,12 @@ data class HandmadeObject(
     var position: Int = 0,
     var objectName: String = "",
     var objectDescription: String = "",
-)
+
+    var imageId: Int = 0
+) {
+    fun copyDataToHandmadeObject(handmadeObject: HandmadeObject){
+        handmadeObject.objectName = objectName
+        handmadeObject.objectDescription = objectDescription
+    }
+
+}

@@ -42,7 +42,7 @@ class HomeFragment: Fragment(), KodeinAware {
 
         //Recycler view
         val handmadeObjectsRecyclerView = root.findViewById<RecyclerView>(R.id.recyclerView_objects_list)
-        val adapter = HandmadeObjectListAdapter()
+        val adapter = HandmadeObjectListAdapter(viewModel)
         handmadeObjectsRecyclerView.adapter = adapter
         handmadeObjectsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
